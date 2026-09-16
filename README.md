@@ -1,6 +1,6 @@
-# MC PAID PANEL — Admin Panel
+# Team brutal — Admin Panel
 
-Premium admin panel for the MC PAID PANEL modding/tools app. Manage keys, floating panel buttons, site settings and app updates from one place.
+Premium admin panel for the Team brutal modding/tools app. Manage keys, floating panel buttons, site settings and app updates from one place.
 
 ## Features
 

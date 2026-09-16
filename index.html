@@ -474,6 +474,8 @@
         import { auth } from "./firebase-config.js";
         import { signInWithEmailAndPassword } from "firebase/auth";
 
+        const ALLOWED_UID = "M21HLZghJEN2bu92ViP8lvUI0v32";
+
         const eyeToggle = document.getElementById("eyeToggle");
         const passwordInput = document.getElementById("passwordInput");
         const EYE_SVG = '<svg class="svg-ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>';
@@ -498,7 +500,15 @@
             loginBtn.querySelector(".btn-text").innerText = "LOGGING IN";
 
             signInWithEmailAndPassword(auth, email, password)
-                .then(function() {
+                .then(function(userCredential) {
+                    if (userCredential.user.uid !== ALLOWED_UID) {
+                        auth.signOut();
+                        errorMsg.style.display = "flex";
+                        loginBtn.disabled = false;
+                        loginBtn.classList.remove("loading");
+                        loginBtn.querySelector(".btn-text").innerText = "LOGIN";
+                        return;
+                    }
                     if (document.getElementById("savePassInput").checked) {
                         localStorage.setItem("adminSavedLogin", JSON.stringify({ email: email, password: password }));
                     } else {

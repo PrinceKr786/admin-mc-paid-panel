@@ -4,42 +4,42 @@
     ".write": false,
     "siteSettings": {
       ".read": true,
-      ".write": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'"
+      ".write": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'"
     },
     "categories": {
       ".read": true,
-      ".write": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'"
+      ".write": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'"
     },
     "posts": {
       ".read": true,
-      ".write": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'"
+      ".write": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'"
     },
     "floatingButtons": {
       ".read": true,
-      ".write": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'"
+      ".write": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'"
     },
     "appUpdate": {
       ".read": true,
-      ".write": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'"
+      ".write": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'"
     },
     "ActiveUserKeys": {
       ".read": "auth != null",
-      ".write": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'",
+      ".write": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'",
       "$key": {
         ".read": true,
-        ".write": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'",
+        ".write": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'",
         "boundDevices": {
           ".write": true
         }
       }
     },
     "BannedDevices": {
-      ".read": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'",
-      ".write": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'"
+      ".read": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'",
+      ".write": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'"
     },
     "users": {
-      ".read": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'",
-      ".write": "auth != null && auth.uid === 'pBlsLukbvoZCTF8e6iDKXwKnar03'"
+      ".read": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'",
+      ".write": "auth != null && auth.uid === 'M21HLZghJEN2bu92ViP8lvUI0v32'"
     }
   }
 }
